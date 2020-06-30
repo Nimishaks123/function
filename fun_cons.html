@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function person(name,age,rollno)
+            {
+                this.Name=name
+                this.age=age
+                this.rollno=rollno
+                this.display=function()
+                {
+                    console.log(this.Name)
+                    console.log(this.age)
+                    console.log(this.rollno)
+                }
+            }
+            var obj=new person('nim',25,63)
+            var obj1=new person('sdf',52,96)
+            //console.log(obj)
+            //console.log(obj1)
+            obj1.display()
+            obj.display()
+        </script>
+    </body>
+</html>

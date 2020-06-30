@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="create()">create 
+        </button>
+        <div id="p1">
+
+        </div>
+        <script>
+            function create()
+            {
+                var paragraph=document.createElement("P")
+                //document.getElementById('p1').innerHTML="<p id='par'>"+"expertzlab"+"</p>"
+                paragraph.innerHTML="expertlab"
+                paragraph.setAttribute("id","p2")
+                document.getElementById("p1").appendChild(paragraph)
+            }
+        </script>
+    </body>
+</html>

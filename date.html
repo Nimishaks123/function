@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="print_date()" id="b">click</button>
+    
+        <script>
+            var d = new Date();
+           function  print_date()
+           {
+              var a=document.createElement("input") 
+              //a.value=d
+              a.setAttribute("id","p")
+              a.setAttribute("value",Date())
+              document.getElementById('b').appendChild(a)
+           }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function employee(eid,name,exp,sal)
+            {
+                this.emp_id=eid
+                this.name=name
+                this.experience=exp
+                this.salary=sal
+                this.incsalary=function(amount)
+                {
+                    this.salary+=amount
+                    return this.salary
+                }
+
+            }
+            </script>
+    </body>
+</html>

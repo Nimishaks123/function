@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var productlist=[]
+            function Product(pid,pname,price)
+            {
+               this.product_id=pid
+               this.product_name=pname
+               this.price=price
+               //var obj=new product(product_id,product_name,price)
+            
+            }
+            function save()
+            {
+                var pid=document.getElementById('pid').value
+                var pname=document.getElementById('pname').value
+                var price=document.getElementById('price').value
+                var product=new Product(pid,pname,price)
+                productlist.push(product)
+                console.log(productlist)
+                for(product of productlist)
+                {
+
+                
+                var list=document.createElement("li")
+                list.innerHTML = product.product_name+" "+product.price
+                
+                
+                }
+                document.getElementById("ul1").appendChild(list)
+                ///
+
+
+                
+            }
+            //var obj=new product()
+            
+        
+        
+        </script>
+        Product_id
+        <input type="text" id="pid" >
+        <br>
+        <br>
+        Product_Name
+        <input type="text" id="pname" >
+        <br>
+        <br>
+        Price
+        <input type="text" id="price" >
+        <br>
+        <br>
+        <button onclick="save()">Save</button>
+        <ul id='ul1'></p>
+
+
+
+    </body>
+</html>

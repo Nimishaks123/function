@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <script>
+            var todo=[]
+            var i
+            function addtodo()
+            {
+                var task=document.getElementById('task').value
+                document.getElementById('task').value=""
+                todo.push(task)
+                console.log(todo,todo.length)
+                var paragraph=document.createElement("P")
+                var b=document.createElement("button")
+                for(i=0;i<todo.length;i++)
+                {
+                    //console.log(todo[i])
+                    //document.getElementById('t1').value=todo[i]
+                    //document.getElementById("t1").innerHTML = todo[i];
+                    
+                
+                //var paragraph=document.createElement("P")
+                //document.getElementById('p1').innerHTML="<p id='par'>"+"expertzlab"+"</p>"
+                paragraph.innerHTML=todo[i]
+                //paragraph.setAttribute("id","p2")
+                document.getElementById("p1").appendChild(paragraph)
+                }
+            }
+        </script>
+        <input type="text" id="task">
+        <button onclick="addtodo()">+</button>
+        <p id="t1"></p>
+
+<div id="p1">
+
+        </div>
+
+    </body>
+</html>

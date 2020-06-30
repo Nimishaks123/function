@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="" onsubmit="return validate1()">
+            <label>Name</label>
+        <input type="text" id="name">
+        <br>
+        <br> 
+        <br>
+        <label>Email</label>
+        <input type="text" id="email">
+        <br>
+        <br>
+        <br> 
+        
+        <label>Password</label>
+        <input type="password" id="psw">
+        
+        <br>
+        <br> 
+        <br>
+        <label>Mobile No</label>
+        <input type="text" id="mob">
+        <br>
+        <br> 
+        <br>
+        <input type="submit" value="submit">
+        
+        </form>
+        <script>
+            function validate1()
+            {
+                var Name=document.getElementById('name')
+                if(Name.value=="")
+                {
+                    alert("cant empty")
+                    Name.focus()
+                    return false
+                }
+            }
+        </script>
+    </body>
+</html>

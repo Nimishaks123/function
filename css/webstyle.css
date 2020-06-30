@@ -1,0 +1,29 @@
+
+ul#menu li {
+    display:inline;
+  }
+  
+  ul
+  {
+      background-color: aqua;
+      width: 100%; 
+      height: 50px;
+      
+  }
+  li:hover{
+      background-color: blue;
+  }
+  .a{
+      display: inline;
+      padding-left: 10px;
+  }
+  .b{
+    display: inline;
+    padding-right: 10px;
+}
+
+.c{
+    display: inline;
+    padding-right: 10px;
+}
+

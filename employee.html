@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        function employee(eid,name,exp,sal)
+        {
+            this.emp_id=eid
+            this.name=name
+            this.experience=exp
+            this.salary=sal
+            this.incsalary=function(amount)
+            {
+                this.salary+=amount
+                return this.salary
+            }
+        }
+        var emp1=new employee("e101",'satish',2,12000)
+        var emp2=new employee("e102",'sanu',5,15000)
+        var salary=emp1.incsalary(5000)
+        var sal=emp2.incsalary(5000)
+        console.log(sal)
+        console.log(salary)
+        console.log(emp1.name)
+            </script>
+    </body>
+</html>

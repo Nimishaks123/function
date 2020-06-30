@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+    
+    <script>
+        var obj={}
+        console.log(obj)
+        //obj.x=10
+        //obj.y=56
+        var ob={}
+        ob.s=100
+        ob.k=200
+        console.log(ob)
+        ob.display=function()
+        {
+            console.log(this.s)
+            console.log(this.k)
+            this.test()
+        }
+        ob.test=function()
+        {
+            console.log("this is test function")
+        }
+        ob.display()
+        var student={name:"nimisha","rollno":20}
+        console.log(student)
+        student.avg=function(marks)
+        {
+            sum=0
+            for i of marks
+            {
+                sum+=i
+            }
+            return sum/marks.length
+        }
+        var s=student.avg([10,20])
+        console.log(s)
+
+    </script>
+    </body>
+</html>
