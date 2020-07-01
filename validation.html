@@ -36,7 +36,14 @@
                 var Name=document.getElementById('name')
                 if(Name.value=="")
                 {
-                    alert("cant empty")
+                    alert("cant empty name field")
+                    Name.focus()
+                    return false
+                }
+                var Name=document.getElementById('name')
+                if(Name.value=="")
+                {
+                    alert("cant empty name field")
                     Name.focus()
                     return false
                 }

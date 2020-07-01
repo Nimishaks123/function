@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //person={"name":"amal","age":"12","address":"abc"}
+            //var student=Object.create(person)
+           // console.log(student)
+            //student.rollno=1
+            //student.batch="cs"
+            //student.name="nimisha"
+            //console.log(student)
+            //console.log(student.name)
+            //student.__proto__.name="nimisha ks"
+            //console.log(student)
+            //Object.freeze(person)
+            //person.name="anu"
+            //console.log(person)
+            //console.log(Object.isFrozen(person))
+           // Object.seal(person)
+           //person.name="hari"
+            //person.city="ekm"
+            ///console.log(person)
+            //console.log(Object.isSealed(person))
+            //person1=Object.assign(person)
+            //console.log(person1)
+            //console.log(Object.keys(person))
+            //console.log(Object.getOwnPropertyNames(student))
+            //
+            //console.log(Object.getPrototypeOf(student))
+            function person(name,age)
+            {
+                this.name=name
+                this.age=age
+            }
+            var obj1=new person("a",12)
+            var obj2=new person("a",12)
+            console.log(obj1===obj2)
+            var s=new String("hello")
+            var s2=new String("hello")
+            console.log("without type",s==s2)
+            console.log("with type",s===s2)
+
+
+
+        </script>
+    </body>
+</html>

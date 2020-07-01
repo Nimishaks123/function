@@ -20,8 +20,24 @@
                 var pname=document.getElementById('pname').value
                 var price=document.getElementById('price').value
                 var product=new Product(pid,pname,price)
+                
+
                 productlist.push(product)
-                console.log(productlist)
+                //console.log(productlist)
+                var objstr=JSON.stringify(product)
+
+                var x = localStorage.length;
+                if(x==0)
+                {
+                localStorage.setItem("1", objstr)
+                }
+            
+                else
+                {
+                x+=1
+
+                localStorage.setItem(x.toString(), objstr)
+                }
                 for(product of productlist)
                 {
 
@@ -30,10 +46,14 @@
                 list.innerHTML = product.product_name+" "+product.price
                 
                 
+               
                 }
                 document.getElementById("ul1").appendChild(list)
                 ///
-
+                for(i=1;i<=x;i++)
+                {
+                    console.log(localStorage.getItem(i.toString()))
+                }
 
                 
             }
