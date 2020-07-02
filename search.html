@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <textarea id="txtid"></textarea>
+        <input type="text" id='uname'>
+        <button onclick="search()">search</button>
+        <p id="highlight"></p>
+        <script>
+            function search()
+            {
+                var s=document.getElementById('uname').value
+                var txtarea=document.getElementById('txtid').value
+                var regex=new RegExp(s,"g")
+                var str=txtarea.replace(regex,"<span style='color:red'>"+s+"</span>")
+                document.getElementById("highlight").innerHTML=str
+            }
+        
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id='uname'>
+        <button onclick="check()">check</button>
+        <script>
+            function check()
+            {
+                var s=document.getElementById('uname').value
+                regex=/^[a-z]\d{2}$/g
+                alert(s.match(regex))
+                alert(regex.test(s))
+            }
+        
+        </script>
+
+    </body>
+</html>
