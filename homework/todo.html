@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <style>
+            /* body{ */
+                /* background-image: url('sample.jpg'); */
+                /* height: 100%; */
+            /* } */
+    
+        </style>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></link>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
     </head>
-    <body>
-        <input type="text" id="txt">
-        <button onclick="add()">+</button>
-        <ul id="ul1">
-            
-        </ul>
-        <script src="todojs.js"></script>
+    <body >
+        <script src=todojs.js></script>
+        
+        <div style="background-color: cadetblue;height:100%;width: 100%;
+        color: darkred;font-size:x-large;text-align: center;"> To do list</div>
+        
+            <div class="row" >
+                <div class="col-sm-6">
+                    <h3 style="text-align: center;color: mediumblue;">Today List</h3>
+
+                    <!-- <input type="text" id="input" placeholder="To do.....">
+                    <button class="glyphicon glyphicon-plus" onclick='addTodo()'></button>
+                   
+                    <ul id="ul1"></ul> -->
+                    <input type="text" id="txt">
+                    <button onclick="addlist()">+</button>
+                    <ul id="ul1">
+                        
+                    </ul>
+                    
+                      </div>
+                
+                
+                      <div class="col-sm-6">
+                    <h3 style="text-align: center;color: mediumblue;">Tomorrow List</h3>
+                    
+                    <ul id="ul2"></ul>
+                </div>
+
+            </div>
+        
     </body>
+   
 </html>

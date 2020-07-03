@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="u11"></p>
+<script>
+    //lamda function to find square of nos
+var arr=[10,20,30,40,50,60]
+let res=arr.map((x)=>{
+    return x**2
+})
+console.log(res)
+//filter function
+let even_nos=arr.filter(x=>{
+    if(x%2==0)
+    {
+        return x
+    }
+})
+console.log(even_nos)
+//array destruction
+var names=["nim","anu"]
+var[a,b,c]=names
+console.log(a,b,c)
+//reduce function
+let arrs=[1,2,3,4,5,6,7,8]
+let res1=arrs.reduce((x,y)=>{
+   // console.log(x)
+    //console.log(y)
+    return x+y
+   
+})
+console.log("first finished")
+console.log(res1)
+let res2=arrs.reduceRight((x,y)=>{
+    //console.log(x)
+    //console.log(y)
+    return x-y
+})
+console.log(res2)
+//foreach
+
+let arrs1=[1,2,3,4,5,6,7,8]
+arrs1.forEach(x=>{
+    console.log(x)
+})
+//unicode
+document.getElementById('u11').innerHTML="\u2603"
+//console.log('\U+2603')
+</script>
+
+</body>
+</html>

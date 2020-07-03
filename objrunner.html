@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+<script>
+let runner={
+    name:'Runner',
+    run:function(speed){
+        console.log(this.name+'runs at'+speed+'mph.');
+    }
+
+};
+let flyer={
+    name:'Flyer',
+    fly:function(speed){
+        console.log(this.name+'flies at'+speed+'mph');
+    }
+};
+let f=runner.run.bind(flyer,20)
+//f()
+let s=flyer.fly.bind(runner,50)
+//s()
+//console.log(f())
+let person={
+    "name":"anu","age":10,"address":"fghfhf","view":function(msg,date)
+    {
+        console.log(this.name)
+        console.log(this.age)
+        console.log("hey",msg)
+        console.log(date)
+    }
+}
+let user={
+    "name":"ghh","age":45,login:function(){console.log("login")}
+}
+d=person.view.bind(user,"goodmorning",new Date())
+d()
+person.view.call(user,"good evening",new Date())
+person.view.apply(user,["good evening",new Date()])
+
+</script>
+</body>
+</html>
