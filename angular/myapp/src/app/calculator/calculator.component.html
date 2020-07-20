@@ -1,0 +1,30 @@
+<div style="margin-left: 35%;background-color: pink;width: 400px;height:400px">
+
+
+    <div *ngIf="operator=='' ">
+ 
+       <input type="text" value="{{value1}}"> <br>
+    </div>
+    <div *ngIf="operator!='' && operator!='='">
+ 
+       <input type="text" value="{{value2}}"><br>
+ 
+    </div>
+    <div *ngIf="operator=='='">
+       <input type="text" value="{{result}}">
+    </div>
+ 
+    <!-- <div *ngIf="value1!='' && value2!=''"> -->
+    <button (click)="getValue(i)" *ngFor='let i of [1,2,3,4]'>{{i}}</button><br>
+ 
+    <button *ngFor='let i of [5,6,7,8]'>{{i}}</button><br>
+ 
+    <button *ngFor='let i of [9,0]'>
+       {{i}}
+ 
+    </button><br>
+ 
+    <button (click)="setOperator(i)" *ngFor='let i of ["+","-","*","/","="]'>
+ 
+       {{i}}
+    </button>
